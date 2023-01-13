@@ -17,7 +17,7 @@ root.render(
       <Route exact path ="/">
       <LoginPage></LoginPage>
       </Route>
-      <Route path ="/PomodoroWeb/pomodoro">
+      <Route path ="/pomodoro">
       <App></App>
       </Route>
     </Switch>
