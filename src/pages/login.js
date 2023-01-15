@@ -8,10 +8,9 @@ import { useAuth } from '../firebase/auth';
 import {CircularProgress} from '@material-ui/core';
 import StyledButton from '../components/styledButton';
 
-const AppPage = '/pomodoro'
+const AppPage = '/PomodoroWeb'
 const uiConfig = {
   signInFlow: 'popup',
-  signInSuccessUrl: AppPage,
   signInOptions: [
     GoogleAuthProvider.PROVIDER_ID
   ]
@@ -23,11 +22,11 @@ function LoginPage (){
   const {authUser,isLoading} = useAuth();
   const history = useHistory()
 
-  // useEffect(()=>{
-  //   if(!isLoading && authUser){
-  //     history.push(AppPage)
-  //   }
-  // },[isLoading,authUser])
+  useEffect(()=>{
+    if(!isLoading && authUser){
+      history.push('/pomodoro')
+    }
+  },[isLoading,authUser])
 
 
   return ((isLoading || (!isLoading && authUser))?
