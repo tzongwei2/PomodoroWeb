@@ -11,7 +11,6 @@ import { useHistory } from 'react-router-dom';
 
 function App() {
 
-
   const [showSettings,setShowSettings] = useState(false);
   const [workMinutes, setWorkMinutes] = useState(45);
   const [breakMinutes, setbreakMinutes] = useState(15);

@@ -4,7 +4,7 @@ import './index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import LoginPage from './pages/login';
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { HashRouter as Router,Route,Switch } from 'react-router-dom';
 import { AuthUserProvider } from './firebase/auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
