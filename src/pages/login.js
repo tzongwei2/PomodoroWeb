@@ -25,7 +25,7 @@ function LoginPage (){
 
   useEffect(()=>{
     if(!isLoading && authUser){
-      history.push('/pomodoro')
+      history.push(AppPage)
     }
   },[isLoading,authUser])
 
