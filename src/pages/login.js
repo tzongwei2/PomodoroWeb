@@ -8,7 +8,6 @@ import { useAuth } from '../firebase/auth';
 import {CircularProgress} from '@material-ui/core';
 import StyledButton from '../components/styledButton';
 
-const AppPage = '/PomodoroWeb'
 const uiConfig = {
   signInFlow: 'popup',
   signInOptions: [

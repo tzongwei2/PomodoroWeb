@@ -12,7 +12,7 @@ root.render(
   <main>
   <AuthUserProvider>
     
-  <Router basename='/PomodoroWeb'>
+  <Router>
     <Switch>
       <Route exact path ="/">
       <LoginPage></LoginPage>
