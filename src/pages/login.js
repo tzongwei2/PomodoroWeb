@@ -23,11 +23,11 @@ function LoginPage (){
   const {authUser,isLoading} = useAuth();
   const history = useHistory()
 
-  useEffect(()=>{
-    if(!isLoading && authUser){
-      history.push(AppPage)
-    }
-  },[isLoading,authUser])
+  // useEffect(()=>{
+  //   if(!isLoading && authUser){
+  //     history.push(AppPage)
+  //   }
+  // },[isLoading,authUser])
 
 
   return ((isLoading || (!isLoading && authUser))?
